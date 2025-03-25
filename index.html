@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watermelon Notes</title>
+    <!-- Link to Google Fonts for Rubik Bubbles font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body, html {
-        
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: "Rubik Bubbles", system-ui;
-            
+            font-family: 'Rubik Bubbles', sans-serif; /* Apply custom font */
+            background: linear-gradient(45deg, #ff6b81, #ffb7b7, #ffd5d5, #ff6b81);
+            background-size: 300% 300%;  /* Adjusted for smoother animation */
+            animation: gradientAnimation 8s ease infinite;
+            overflow: hidden;
         }
 
         h1 {
@@ -28,23 +34,17 @@
             text-align: center;
         }
 
-body {
-  background: linear-gradient(15deg,#900000,#a1c2f7,#f1a8ed);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
 <body>
