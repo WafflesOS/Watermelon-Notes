@@ -99,7 +99,7 @@ struct NewNoteView: View {
     @State private var shadowColorIndex = 0
     @State private var currentImage = "brain.fill"
     
-
+    
     
     let images: [String] = ["brain.fill", "star.fill", "heart.fill", "bolt.fill","moon.fill","star.fill", "cloud.fill"]
     
@@ -110,10 +110,10 @@ struct NewNoteView: View {
             TextEditor(text: $content)
                 .frame(height: 200)
             
-            .padding()
-            .background(Color.white)
-            .cornerRadius(15)
-            .padding(.horizontal)
+                .padding()
+                .background(Color.white)
+                .cornerRadius(15)
+                .padding(.horizontal)
         }
         .navigationTitle("New Note")
         .navigationBarItems(
@@ -183,7 +183,7 @@ struct SettingsView: View {
                     Text(Image(systemName: "star")) + Text(" My Tiktok")
                 }
                 Link(destination: URL(string: 
-                                 "https://watermelon2.bio.link")!) {
+                                        "https://watermelon2.bio.link")!) {
                     Text(Image(systemName: "macwindow")) + Text(" My Website")
                 }
             }
@@ -240,12 +240,7 @@ struct SettingsView: View {
 }
 
 // MARK: - Main App Entry
-@main
-struct NotesApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+
+
+
 
