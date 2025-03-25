@@ -5,7 +5,7 @@ Tutorial!
 3. Click the button 'app'.
 4. Delete all of the code that is in the code box.
 5. Go to the main website.
-6. Go to the top link and select all and click copy.
+6. Go to the top link and click the copy button.
 7. Paste it into the code box.
 8. Should work, just click the play button!
 -----------------
